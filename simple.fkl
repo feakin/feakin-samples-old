@@ -5,8 +5,11 @@ impl CinemaCreated {
         response: Cinema;
     }
 }
-
+// document
 impl CinemaUpdated {
+"""
+some thing should be here
+"""
     endpoint {
         POST "/book/{id}";
         request: CinemaUpdatedRequest;
@@ -43,3 +46,12 @@ layered DDD {
     }
 }
 
+SourceSet sourceSet {
+    feakin {
+        srcDir: ["src/main/resources/uml"]
+    }
+    puml {
+        parser: "PlantUML"
+        srcDir: ["src/main/resources/uml"]
+    }
+}
