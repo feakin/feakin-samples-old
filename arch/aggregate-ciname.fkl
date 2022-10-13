@@ -5,7 +5,7 @@ impl CinemaCreated {
         response: Cinema;
     }
 }
-// document
+
 impl CinemaUpdated {
     """
     some thing should be here

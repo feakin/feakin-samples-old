@@ -1,4 +1,4 @@
-//import "./layered"
+include "./layered"
 
 ContextMap TicketBooking {
     Reservation -> Cinema;
