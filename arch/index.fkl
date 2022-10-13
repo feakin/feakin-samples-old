@@ -1,0 +1,17 @@
+//import "./layered"
+
+ContextMap TicketBooking {
+    Reservation -> Cinema;
+    Reservation -> Movie;
+    Reservation <-> User;
+}
+
+SourceSet sourceSet {
+    feakin {
+        srcDir: ["src/main/resources/uml"]
+    }
+    puml {
+        parser: "PlantUML"
+        srcDir: ["src/main/resources/uml"]
+    }
+}

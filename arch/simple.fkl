@@ -23,35 +23,3 @@ impl CinemaUpdated {
         via MessageQueue send CinemaCreated to "CinemaCreated"
     }
 }
-
-layered DDD {
-    dependency {
-        "interface" -> "application"
-        "interface" -> "domain"
-        "domain" -> "application"
-        "application" -> "infrastructure"
-        "interface" -> "infrastructure"
-    }
-    layer interface {
-        package: "com.example.book"
-    }
-    layer domain {
-        package: "com.example.domain"
-    }
-    layer application {
-        package: "com.example.application"
-    }
-    layer infrastructure {
-        package: "com.example.infrastructure"
-    }
-}
-
-SourceSet sourceSet {
-    feakin {
-        srcDir: ["src/main/resources/uml"]
-    }
-    puml {
-        parser: "PlantUML"
-        srcDir: ["src/main/resources/uml"]
-    }
-}

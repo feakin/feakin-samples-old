@@ -1,35 +1,3 @@
-ContextMap TicketBooking {
-    Reservation -> Cinema;
-    Reservation -> Movie;
-    Reservation <-> User;
-}
-
-Context Reservation {
-    Aggregate Reservation;
-}
-
-Aggregate Reservation {
-    Entity Ticket, Reservation;
-}
-
-Entity Reservation {
-    Struct {
-        id: String;
-        token: UUID;
-        status: ReservationStatus = ReservationStatus.OPEN;
-        expiresAt: LocalDateTime;
-        createdAt: LocalDateTime;
-        screeningId: String;
-        screeningStartTime: LocalDateTime;
-        name: String;
-        surname: String;
-        tickets: Set<Ticket>;
-        totalPrice: BigDecimal;
-    }
-}
-
-Entity Ticket {}
-
 Context Cinema {
     Aggregate Cinema;
 }
