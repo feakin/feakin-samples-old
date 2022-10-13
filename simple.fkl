@@ -7,9 +7,9 @@ impl CinemaCreated {
 }
 // document
 impl CinemaUpdated {
-"""
-some thing should be here
-"""
+    """
+    some thing should be here
+    """
     endpoint {
         POST "/book/{id}";
         request: CinemaUpdatedRequest;

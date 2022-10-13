@@ -19,7 +19,7 @@ impl CinemaCreated {
         // grpc Greeter
         via GRPC::Greeter send CinemaCreated to "CinemaCreated"
         // map filter
-        when(isUserValid) {
+        when (isUserValid) {
             is true => {
                 // do something
             }
@@ -28,4 +28,14 @@ impl CinemaCreated {
             }
         }
     }
+}
+
+var source: JavaSource {
+    language: "Java";
+    package: "com.phodal.coco";
+}
+
+def ContextMap {
+    // todo: parser generator
+    sample: String;
 }
