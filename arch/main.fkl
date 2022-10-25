@@ -1,5 +1,6 @@
 include "./config"
 include "./context-reservation"
+include "./guarding-layered"
 
 ContextMap TicketBooking {
     Reservation -> Cinema;
