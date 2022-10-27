@@ -18,6 +18,19 @@ SourceSet sourceSet {
     }
 }
 
+env Local {
+    datasource {
+        url: "jdbc:postgresql://localhost:5432/yourdb"
+        driver: "org.postgresql.Driver"
+        user: "youruser"
+        password: "yourpassword"
+    }
+    server {
+        port: 9090;
+    }
+}
+
+
 impl PackageJsonGet {
     endpoint {
         GET "https://raw.githubusercontent.com/feakin/vscode-feakin/master/package.json";
