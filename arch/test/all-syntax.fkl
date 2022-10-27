@@ -1,4 +1,4 @@
-include "./layered"
+include "../config"
 
 Context Cinema {
     Aggregate Cinema;
@@ -59,11 +59,11 @@ ValueObject Notifications {}
 layered DDD {
     // by default
     dependency {
-        "interface" -> "application"
-        "interface" -> "domain"
-        "domain" -> "application"
-        "application" -> "infrastructure"
-        "interface" -> "infrastructure"
+        interface -> application
+        interface -> domain
+        interface -> infrastructure
+        application -> infrastructure
+        application -> domain
     }
     layer interface {
         package: "com.feakin.demo.rest";

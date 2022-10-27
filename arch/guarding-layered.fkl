@@ -20,3 +20,4 @@ layered DDD {
         package: "com.feakin.demo.infrastructure";
     }
 }
+
