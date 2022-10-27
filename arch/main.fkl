@@ -17,3 +17,9 @@ SourceSet sourceSet {
         srcDir: ["src/main/resources/uml"]
     }
 }
+
+impl PackageJsonGet {
+    endpoint {
+        GET "https://raw.githubusercontent.com/feakin/vscode-feakin/master/package.json";
+    }
+}
