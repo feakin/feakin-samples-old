@@ -8,6 +8,10 @@ ContextMap TicketBooking {
     Reservation <-> User;
 }
 
+Context Cinema {}
+Context Movie {}
+Context User {}
+
 SourceSet sourceSet {
     feakin {
         srcDir: ["src/main/resources/uml"]
@@ -20,10 +24,7 @@ SourceSet sourceSet {
 
 env Local {
     datasource {
-        url: "jdbc:postgresql://localhost:5432/yourdb"
-        driver: "org.postgresql.Driver"
-        user: "youruser"
-        password: "yourpassword"
+        url: "postgresql://localhost:5432/test"
     }
     server {
         port: 9090;

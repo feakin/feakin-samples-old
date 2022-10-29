@@ -22,4 +22,8 @@ Entity Reservation {
     }
 }
 
-Entity Ticket {}
+Entity Ticket {
+    Struct {
+        id: String;
+    }
+}
