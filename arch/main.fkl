@@ -11,11 +11,11 @@ ContextMap TicketBooking {
 Context Cinema {}
 Context Movie {}
 Context User {
-  Aggregate User;
+    Aggregate User;
 }
 
 Aggregate User {
-  Entity User;
+    Entity User;
 }
 
 Entity User {
@@ -40,6 +40,10 @@ env Local {
     }
     server {
         port: 9090;
+    }
+    kafka {
+        host: "localhost"
+        port: 9092
     }
 }
 
