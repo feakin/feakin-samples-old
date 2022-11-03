@@ -7,7 +7,7 @@ Aggregate Reservation {
 }
 
 Entity Reservation {
-    Struct {
+    struct {
         id: String;
         token: UUID;
         status: ReservationStatus = ReservationStatus.OPEN;

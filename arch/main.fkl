@@ -18,8 +18,9 @@ Aggregate User {
     Entity User;
 }
 
+/// Sample
 Entity User {
-    Struct {
+    struct {
         id: uuid;
     }
 }
