@@ -6,7 +6,6 @@ ContextMap architecture {
                 name: String;
             }
 
-
             Entity ArchComponent {
                 struct {
                     name: String;

@@ -18,11 +18,15 @@ Aggregate User {
     Entity User;
 }
 
-/// Sample
+/// sample
 Entity User {
     struct {
         id: uuid;
     }
+}
+
+Struct User {
+    id: uuid;
 }
 
 SourceSet sourceSet {
