@@ -1,3 +1,11 @@
+Struct CinemaUpdatedRequest {
+    name: String;
+}
+
+Struct Cinema {
+    name: String;
+}
+
 impl CinemaCreated {
     endpoint {
         GET "/book/{id}";

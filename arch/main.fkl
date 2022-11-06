@@ -15,7 +15,15 @@ Context User {
 }
 
 Aggregate User {
-    Entity User;
+    Entity User, Demo;
+}
+
+Entity Demo {
+    ValueObject DemoCode;
+}
+
+ValueObject DemoCode {
+
 }
 
 /// sample
